@@ -5,7 +5,7 @@ react-native-cli: 2.0.1<br/>
 react-native: 0.55.4<br/>
 OS: Windows 10 Pro<br/>
 <br/>
-The project is created and bootstrapped using react-native init.<br/>
+The project is created and bootstrapped using <strong>react-native init</strong>.<br/>
 <br/>
 <strong>Build Instructions:</strong><br/>
 After cloning/downloading, point to the directory from command prompt, and then enter,
