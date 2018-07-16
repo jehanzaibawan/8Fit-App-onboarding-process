@@ -5,12 +5,16 @@ react-native-cli: 2.0.1<br/>
 react-native: 0.55.4<br/>
 OS: Windows 10 Pro<br/>
 <br/>
+The project is bootstrapped using create-react-native-app tool.<br/>
+<br/>
 <strong>Build Instructions:</strong><br/>
 After cloning/downloading, point to the directory from command prompt, and then enter,
 <br/><br/>
 <strong>npm install</strong>
 <br/><br/>
 It will install the dependencies. I have used only one external package "react-navigation" for handling screens navigations and that is also been mentioned in package.json under dependencies.<br/>
+<br/>
+Once dependencies are installed hit command <strong>react-native run-(android OR ios)</strong>. This will run the app to a simulator or a device.
 <br/><br/>
 <strong>Thoughts about how you think the task went?</strong><br/>
 I have put every effort to complete this task with perfection and within time. Yet, achieving perfection is an ongoing process, and there is no end to it.
