@@ -112,8 +112,9 @@ export default class WelcomeScreen extends Component {
       0);
   }
 
-  _navigateToAgeScreen = () => {
-    this.props.navigation.navigate('AgeScreen');
+  _navigateToAgeScreen = (goal) => {
+    let navParams = { fitnessGoal: goal };
+    this.props.navigation.navigate('AgeScreen', navParams);
   }
 
   render() {
@@ -181,19 +182,19 @@ export default class WelcomeScreen extends Component {
           />
           <Animated.ScrollView style={[styles.goalsContainer, contentsAnimationStyle]}>
             <BoxShapeXXLButton
-              heading="Lose Weight"
+              heading="Lose weight"
               description="Burn fat and get lean"
-              cbOnPress={this._navigateToAgeScreen} />
+              cbOnPress={() => this._navigateToAgeScreen('Loose weight')} />
 
             <BoxShapeXXLButton
               heading="Get fitter"
               description="Tone up and feel healthy"
-              cbOnPress={this._navigateToAgeScreen} />
+              cbOnPress={() => this._navigateToAgeScreen('Get fitter')} />
 
             <BoxShapeXXLButton
               heading="Gain muscle"
               description="Build mass and strength"
-              cbOnPress={this._navigateToAgeScreen} />
+              cbOnPress={() => this._navigateToAgeScreen('Gain muscle')} />
           </Animated.ScrollView>
         </ImageBackground>
       </View>

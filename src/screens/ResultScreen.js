@@ -22,7 +22,10 @@ const ResultScreen = (props) => {
       </Text>
       <View style={styles.centerContent}>
         <Text style={styles.resultText}>
-          You are <Text style={styles.resultValue}>{helper.removeInitialZeros(props.navigation.getParam('ageValue'))} years</Text> old
+          Your fitness goal is to <Text style={styles.resultValue}>{props.navigation.getParam('fitnessGoal')}</Text>,
+        </Text>
+        <Text style={styles.resultText}>
+          you are <Text style={styles.resultValue}>{helper.removeInitialZeros(props.navigation.getParam('ageValue'))} years</Text> old
         </Text>
         <Text style={styles.resultText}>
           and

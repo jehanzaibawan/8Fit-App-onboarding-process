@@ -31,8 +31,9 @@ export default class HeightScreen extends Component {
   }
 
   _navigateToResult = () => {
-    let params = {
-      ageValue: this.props.navigation.getParam('ageValue'),
+    let navParams = {
+      fitnessGoal: this.props.navigation.getParam("fitnessGoal"),
+      ageValue: this.props.navigation.getParam("ageValue"),
       selectedUnit: this._getSelectedUnit(),
       cmValue: this.txtBoxCMgetText(),
       ftValue: this.txtBoxFTgetText(),
@@ -42,7 +43,7 @@ export default class HeightScreen extends Component {
     if (this._getSelectedUnit() === "CM") {
       if (this.txtBoxCMhasValidValue()) {
         this.setCMshowAlert(false);
-        this.props.navigation.navigate('ResultScreen', params);
+        this.props.navigation.navigate('ResultScreen', navParams);
       }
       else {
         this.setCMshowAlert(true);
@@ -52,7 +53,7 @@ export default class HeightScreen extends Component {
         this.setFTshowAlert(false);
         if (this.txtBoxINChasValidValue()) {
           this.setINCshowAlert(false);
-          this.props.navigation.navigate('ResultScreen', params);
+          this.props.navigation.navigate('ResultScreen', navParams);
         }
         else {
           this.setINCshowAlert(true);

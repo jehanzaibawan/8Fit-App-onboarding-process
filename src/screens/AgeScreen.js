@@ -26,10 +26,13 @@ export default class AgeScreen extends Component {
 
   _navigateToHeight = () => {
     if (this.txtBoxHasValidValue()) {
-      let ageValue = { ageValue: this.txtBoxGetText() };
+      let navParams = {
+        fitnessGoal: this.props.navigation.getParam("fitnessGoal"),
+        ageValue: this.txtBoxGetText()
+      };
 
       this.setShowAlert(false);
-      this.props.navigation.navigate('HeightScreen', ageValue);
+      this.props.navigation.navigate('HeightScreen', navParams);
     } else {
       this.setShowAlert(true);
     }
