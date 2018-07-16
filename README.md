@@ -21,6 +21,8 @@ I have put every effort to complete this task with perfection and within time. Y
 <br/><br/>
 I have worked on organizing the project structure to be more self-explanatory, defined components with respect to their types(avoided using states where possible), created stateless functional components and stateful components both, their reusability and written less code and achieved more.
 <br/><br/>
+I have used React's own state management. As the screens are only a few and with no deep depth of children so I feel it unnecessary to use any state management. Data shared between screens are done using navigation parameters. Redux is the best choice though if the app is huge.
+<br/><br/>
 Each component is tasteable, defined with default propProps and enforces propTypes with types and required a tag.
 <br/><br/>
 I have performed app performance test on various android devices(phones only), however, due to lack of resources(Mac(for XCode), iPhone) I was not able to test it on this system. I believe things will work the same on these devices to as I have written very limited platform-specific code, and where appears it is enclosed with Platform API.
