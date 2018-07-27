@@ -1,5 +1,6 @@
-# 8FitTask
-
+# 8fit onboarding process
+This project is a clone of an onboarding process of a popular fitness app 8fit.
+<br/><br/>
 <strong>Version and Enivronment Info:</strong><br/>
 react-native-cli: 2.0.1<br/>
 react-native: 0.55.4<br/>
